@@ -1,0 +1,13 @@
+"There are many format specifiers we can use. Here are some common ones:\n" +
+                "\n" +
+                "%c - Character\n" +
+                "%d - Decimal number (base 10)\n" +
+                "%e - Exponential floating-point number\n" +
+                "%f - Floating-point number\n" +
+                "%i - Integer (base 10)\n" +
+                "%o - Octal number (base 8)\n" +
+                "%s - String\n" +
+                "%u - Unsigned decimal (integer) number\n" +
+                "%x - Hexadecimal number (base 16)\n" +
+                "%t - Date/time\n" +
+                "%n - Newline\n");
