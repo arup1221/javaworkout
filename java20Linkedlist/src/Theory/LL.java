@@ -49,6 +49,22 @@ public class LL {
 
         size++;
     }
+
+    //insert using Recurtion
+    public void insertRec(int val, int index){
+            head = insertRec(val, index, head);
+    }
+    private Node insertRec(int val, int index, Node node){
+        if (index == 0){
+            Node temp = new Node(val,node);
+            size++;
+            return temp;
+        }
+      node.next =  insertRec(val, index-1, node.next);
+     //Here index is not index number it is how  many index remaining
+        return node;
+    }
+
     public int deleteLast(){
         if(size<=1){
             return deleteFirst();
@@ -119,6 +135,115 @@ public class LL {
             this.next = next;
         }
     }
+
+public void duplicate(){
+        Node node = head;
+        while(node.next != null){
+            if(node.value == node.next.value){
+                node.next = node.next.next;
+                size--;
+            }else {
+                node = node.next;
+            }
+        }
+        tail = node;
+        tail.next = null;
+}
+
+public static LL marge(LL first, LL second) {
+    Node f =first.head;
+    Node s = second.head;
+
+    LL ans = new LL();
+
+    while(f!=null && s!=null){
+        if(f.value < s.value){
+            ans.insertLast(f.value);
+            f = f.next;
+        }
+        else {
+            ans.insertLast(s.value);
+            s = s.next;
+        }
+    }
+    while(f!=null){
+        ans.insertLast(f.value);
+        f = f.next;
+    }
+    while(s!=null){
+        ans.insertLast(s.value);
+        s = s.next;
+    }
+    return  ans;
+
+}
+public void bubbleSort(){
+        bubbleSort(size-1,0);
+}
+
+    private void bubbleSort(int row, int col) {
+        if(row == 0){
+            return;
+        }
+        if(col<row){
+            Node first = get(col);
+            Node second = get(col+1);
+            if(first.value > second.value){
+                //swap
+                if(first == head){
+                    head = second;
+                    first.next = second.next;
+                    second.next = first;
+                }
+                else if(second == tail){
+                    Node prev = get(col - 1);
+                    prev.next = second;
+                    tail = first;
+                    first.next = null;
+                    second.next = tail;
+                } else{
+                    Node prev = get(col - 1);
+                    prev.next = second;
+                    first.next = second.next;
+                    second.next = first;
+                }
+            }
+            bubbleSort(row,col+1);
+        }
+        else{
+            bubbleSort(row-1,0);
+        }
+    }
+    public void reverse(Node node){
+        if(node == tail){
+            head = tail;
+            return;
+        }
+        reverse(node.next);
+        tail.next = node;
+        tail = node;
+        tail.next = null;
+    }
+
+    public void reverse2(){
+        if(size < 2){
+            return;
+        }
+        Node prev = null;
+        Node present = head;
+        Node next = present.next;
+
+        while(present!=null){
+            present.next = prev;
+            prev = present;
+            present = next;
+            if(next != null){
+                next = next.next;
+            }
+        }
+        head = prev;
+    }
+
 
 
 }
