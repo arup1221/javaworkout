@@ -4,7 +4,7 @@ public class majorele{
     public static void main(String args[]) {
         int[] arr = {2, 2, 1, 1, 1, 2, 2};
         int ans = majorityElement(arr);
-        System.out.println("The majority element is: " );
+        System.out.println("The majority element is: " + ans );
 
     }
 
