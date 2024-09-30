@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c86515ac-6521-4513-be13-2806c2d3e119" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DynamicProgramming/fibo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DynamicProgramming/fibo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kickdrum/src/Accenture/HappyBank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kickdrum/src/Accenture/ThreeSumBool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kickdrum/src/Accenture/WairedNum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kickdrum/src/Accenture/longSubSeq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kickdrum/src/KickDrum/GCD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kickdrum/src/KickDrum/GuessWord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kickdrum/src/KickDrum/NumberWith2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kickdrum/src/KickDrum/StarsBetweenBars.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kickdrum/src/KickDrum/celciTOFaren.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kickdrum/src/KickDrum/setBit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kickdrum/src/practice/bubbleSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,13 +27,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/arupgope/Documents/JavaWorkout/javaworkout/Questions"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/arupgope/Documents/JavaWorkout/javaworkout/Questions&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
